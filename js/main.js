@@ -8,6 +8,18 @@ document.body.appendChild( renderer.domElement );
 
 var geometry = new THREE.SphereGeometry( 0.5, 32, 32 );
 var material = new THREE.MeshBasicMaterial();
+
+var loader=new THREE.TextureLoader();
+loader.setCrossOrigin("anonymous");
+loader.load(
+  'images/earthmap.jpg',
+  function (texture) {
+		var material = new THREE.MeshBasicMaterial({
+			map: texture
+		});
+	}
+);
+
 var earth = new THREE.Mesh( geometry, material );
 scene.add( earth );
 
