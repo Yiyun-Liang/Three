@@ -1,0 +1,23 @@
+{
+  "name": "Three",
+  "authors": [
+    "isa <isaliangyiyun@hotmail.com>"
+  ],
+  "description": "",
+  "main": "js/main.js",
+  "keywords": [
+    "three.js"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "three.js": "^0.82.0"
+  }
+}
