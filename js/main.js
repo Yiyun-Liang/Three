@@ -6,6 +6,13 @@ var renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
+//CONTAINER
+var container = new THREE.Object3D();
+container.rotateZ(-23.4 * Math.PI/180);
+container.position.z = 0;
+scene.add(container);
+
+//EARTH
 var geometry = new THREE.SphereGeometry( 2.0, 64, 64 );
 
 var loader = new THREE.TextureLoader();
